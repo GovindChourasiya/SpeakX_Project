@@ -1,0 +1,139 @@
+body {
+  background-color: #eff7f6; 
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Search and Filter Styling */
+.search-filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #2dd5f7;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  font-size: 16px;
+  border: 2px solid #283618;
+  border-radius: 4px;
+}
+
+.search-input:hover {
+  background-color: #f3f4f4;
+  border-color: #283618;
+}
+
+.suggestions-list {
+  position: absolute;
+  background-color: #B2F7EF;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  z-index: 1000;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #B2F7EF;
+}
+
+/* Filter Box */
+.filter-box {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  position: inherit;
+  gap: 10px;
+  flex-basis: 30%;
+}
+
+.filter-icon {
+  margin-left: 30px;
+  font-size: 18px;
+  color: #2dd5f7;
+}
+
+.dropdown-select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #283618;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdown-select:hover{
+  background-color: #f3f4f4;
+}
+
+/* Questions List */
+.questions-list {
+  list-style: none;
+  padding: 0;
+}
+
+.question-item {
+  padding: 10px;
+  border: 1px solid #283618;
+  border-radius: 4px;
+  background-color: #F7D6E0;
+  margin-bottom: 10px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #fa6491;
+  color: white;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
